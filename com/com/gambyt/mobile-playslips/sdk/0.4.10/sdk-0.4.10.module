@@ -1,0 +1,741 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.gambyt.mobile-playslips",
+    "module": "sdk",
+    "version": "0.4.10",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-0.4.10.aar",
+          "url": "sdk-0.4.10.aar",
+          "size": 3227375,
+          "sha512": "589d1b84c883f24e9bb22d8e85a4dc7d3ba0da794909084ac9d2f58f6ccfde983c213b9b0bc90c503f89430ce02a39b443266c2365c1075506c177fc05fec9d4",
+          "sha256": "053202821b5f4893a3994a70f5f4229642499cfdf6c947fb94d35d72a26df90e",
+          "sha1": "bb5cf0003138100decc80ae15594933bbe88219c",
+          "md5": "d6eb3ea09d7af66061d9d09fc626ac7c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "1.7.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.7.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.2"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.10.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.jakewharton.threetenabp",
+          "module": "threetenabp",
+          "version": {
+            "requires": "1.2.4"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-ktx",
+          "version": {
+            "requires": "2.5.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common-java8",
+          "version": {
+            "requires": "2.5.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.5.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.compose.material",
+          "module": "material",
+          "version": {
+            "requires": "1.5.4"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.compose.animation",
+          "module": "animation",
+          "version": {
+            "requires": "1.5.4"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling",
+          "version": {
+            "requires": "1.5.4"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.5.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime-livedata",
+          "version": {
+            "requires": "1.2.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-compose",
+          "version": {
+            "requires": "2.5.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-systemuicontroller",
+          "version": {
+            "requires": "0.17.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout-compose",
+          "version": {
+            "requires": "1.0.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-flowlayout",
+          "version": {
+            "requires": "0.16.1"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.flexbox",
+          "module": "flexbox",
+          "version": {
+            "requires": "3.0.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-pager",
+          "version": {
+            "requires": "0.24.9-beta"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-pager-indicators",
+          "version": {
+            "requires": "0.24.9-beta"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie-compose",
+          "version": {
+            "requires": "4.0.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil-compose",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.google.zxing",
+          "module": "core",
+          "version": {
+            "requires": "3.4.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.journeyapps",
+          "module": "zxing-android-embedded",
+          "version": {
+            "requires": "4.2.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.4.3"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-ktx",
+          "version": {
+            "requires": "2.4.3"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.9.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-moshi",
+          "version": {
+            "requires": "2.9.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.11.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.moshi",
+          "module": "moshi-kotlin",
+          "version": {
+            "requires": "1.14.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.moshi",
+          "module": "moshi-adapters",
+          "version": {
+            "requires": "1.14.0"
+          },
+          "excludes": [
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core"
+            },
+            {
+              "group": "androidx.lifecycle",
+              "module": "lifecycle-livedata-core-ktx"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-0.4.10.aar",
+          "url": "sdk-0.4.10.aar",
+          "size": 3227375,
+          "sha512": "589d1b84c883f24e9bb22d8e85a4dc7d3ba0da794909084ac9d2f58f6ccfde983c213b9b0bc90c503f89430ce02a39b443266c2365c1075506c177fc05fec9d4",
+          "sha256": "053202821b5f4893a3994a70f5f4229642499cfdf6c947fb94d35d72a26df90e",
+          "sha1": "bb5cf0003138100decc80ae15594933bbe88219c",
+          "md5": "d6eb3ea09d7af66061d9d09fc626ac7c"
+        }
+      ]
+    }
+  ]
+}
