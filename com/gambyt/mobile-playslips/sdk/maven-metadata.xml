@@ -3,11 +3,12 @@
   <groupId>com.gambyt.mobile-playslips</groupId>
   <artifactId>sdk</artifactId>
   <versioning>
-    <latest>0.4.9</latest>
+    <latest>0.4.11-SNAPSHOT</latest>
     <release>0.4.9</release>
     <versions>
       <version>0.4.9</version>
+      <version>0.4.11-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240111161746</lastUpdated>
+    <lastUpdated>20240112044404</lastUpdated>
   </versioning>
 </metadata>
